@@ -1,0 +1,117 @@
+
+/* Variables */
+$valid-color: #25c76d;
+$text-color: #282c34;
+$invalid-color: #f91559;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.App-header {
+  background-color: #282c34;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+  padding: 20px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.small-text {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.board {
+  display: table;
+  margin: 3% auto;
+  .empty {
+    font-size: 18px;
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid;
+  }
+  .row {
+    display: table;
+    .cell {
+      display: table-cell;
+      width: 45px;
+      height: 45px;
+      background-color: #bcbcbc;
+      vertical-align: middle;
+      border-bottom: 1px solid $text-color;
+      border-right: 1px solid $text-color;
+      &:last-of-type {
+        border-right: 0;
+      }
+      &.input {
+        background-color: white;
+      }
+      &.valid {
+        background: $valid-color;
+        input[type="text"] {
+          background: $valid-color;
+          color: white;
+        }
+      }
+      &.invalid {
+        background: $invalid-color;
+        input[type="text"] {
+          background: $invalid-color;
+          color: white;
+        }
+      }
+    }
+    &:last-of-type {
+      .cell {
+        border-bottom: 0;
+      }
+    }
+    input[type="text"] {
+      width: 95%;
+      height: 95%;
+      color: $text-color;
+      border: 0;
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      outline: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.bttn {
+    background-color: transparent;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 10px 5px;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
