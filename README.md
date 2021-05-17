@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App]
 
-## The Puzzle Test App - Learnosity
+## The Puzzle Test App
 # Updates
 
  * Fixed reset button not working when users already input some values in cells. (reset wasnt in the to do list but made it anyway so fixed now.)
