@@ -39,7 +39,7 @@ const GridLayout = [ // Puzzle Question Grid
 
 # Answers Grid Puzzles data:
 
-As i wasnt told to use certain answers format. I made up in this way. I find this setup is
+Please find this setup is
 easier as since the app is able to find the words that matches and records the cordinates
 from the questions Grid. Better and easy data understanding i made it this way.
 Ofcourse the app only works if the answers grid is in following format. This must match perfectly as the questions Grid!
